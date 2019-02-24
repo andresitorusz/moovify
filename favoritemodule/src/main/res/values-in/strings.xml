@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">Moovify</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="now_playing">Sedang dimainkan</string>
+    <string name="upcoming">Mendatang</string>
+    <string name="search_movie">Cari Film</string>
+    <string name="overview">Ikhtisar</string>
+    <string name="movie_title">Judul Film</string>
+    <string name="movie_genre">Aliran Film</string>
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+    <string name="favorite">Favorit</string>
+    <string name="trailers">Trailer</string>
+
+</resources>

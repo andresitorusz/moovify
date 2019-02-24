@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detail_app_bar_height">256dp</dimen>
+    <dimen name="detail_app_bar_elevation">4dp</dimen>
+    <dimen name="detail_textview_margin">16dp</dimen>
+    <dimen name="detail_textview_size">24sp</dimen>
+    <dimen name="detail_textview_margin_half">8dp</dimen>
+    <dimen name="detail_textview_margin_double">32dp</dimen>
+    <dimen name="search_margin_half">8dp</dimen>
+    <dimen name="search_margin">16dp</dimen>
+    <dimen name="search_elevation">4dp</dimen>
+    <dimen name="catalogue_cardview_height">128dp</dimen>
+    <dimen name="catalogue_cardview_margin">8dp</dimen>
+    <dimen name="catalogue_imageview_width">96dp</dimen>
+    <dimen name="catalogue_imageview_height">0dp</dimen>
+    <dimen name="toolbar_padding">8dp</dimen>
+    <dimen name="thumbnail_height">150dp</dimen>
+    <dimen name="thumbnail_width">150dp</dimen>
+    <dimen name="thumbnail_margin">16dp</dimen>
+    <dimen name="textview_height">18dp</dimen>
+    <dimen name="textview_width">0dp</dimen>
+</resources>

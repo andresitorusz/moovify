@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">Favorite</string>
+    <string name="no_internet_connection" translatable="false">No internet connection.</string>
+    <string name="app_component_factory" translatable="false">appComponentFactory</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="search_movie">Search Movie</string>
+    <string name="overview">Overview</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_genre">Movie Genre</string>
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="favorite">Favorite</string>
+    <string name="trailers">Trailers</string>
+    <string name="_2018" translatable="false">2018</string>
+
+</resources>
