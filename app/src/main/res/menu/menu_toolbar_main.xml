@@ -13,4 +13,10 @@
         android:title="@string/change_language_settings"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/action_reminder"
+        android:icon="@drawable/ic_reminder"
+        android:title="@string/set_reminder"
+        app:showAsAction="ifRoom" />
+
 </menu>

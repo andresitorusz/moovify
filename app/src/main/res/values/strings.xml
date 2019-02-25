@@ -14,5 +14,17 @@
     <string name="favorite">Favorite</string>
     <string name="_2018" translatable="false">2018</string>
     <string name="no_fav_found">No Favorite Movies Found</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="favorite_movies">Favorite Movies</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="app_will_remind_you_to_come_back_every_day">App will remind you to come back every day</string>
+    <string name="disable">Disable</string>
+    <string name="enable">Enable</string>
+    <string name="release_today_reminder">Release Today Reminder</string>
+    <string name="daily_reminder_msg">Moovify is missing you!</string>
+    <string name="release_today_reminder_msg">has been released today!</string>
 
 </resources>

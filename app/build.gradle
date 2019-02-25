@@ -14,8 +14,9 @@ android {
         buildConfigField("String", "TMDB_IMAGE_BASE_URL_780", '"https://image.tmdb.org/t/p/w780"')
         buildConfigField("String", "TMDB_IMAGE_BASE_URL_500", '"https://image.tmdb.org/t/p/w500"')
         buildConfigField("String", "TMDB_MOVIE_ID", '"movie_id"')
+        buildConfigField("String", "TMDB_MOVIE_TITLE", '"movie_title"')
         buildConfigField("String", "FAVORITE_TABLE_MOVIE", '"favorite"')
-        buildConfigField("String", "FAVORITE_AUTHORITY",'"com.stilldre.moovify"')
+        buildConfigField("String", "FAVORITE_AUTHORITY", '"com.stilldre.moovify"')
     }
     buildTypes {
         release {
@@ -42,6 +43,7 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.7.1") {
         exclude group: "com.android.support"
     }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 

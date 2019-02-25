@@ -33,7 +33,7 @@ public class NowPlayingFragment extends Fragment {
     @BindView(R.id.recyclerView_now_playing)
     RecyclerView rvMovie;
     @BindView(R.id.now_playing_swiper)
-    SwipeRefreshLayout swiper;
+    SwipeRefreshLayout swipeRefreshLayout;
 
 
     private MovieAdapter movieAdapter;
@@ -63,14 +63,9 @@ public class NowPlayingFragment extends Fragment {
         ButterKnife.bind(this, view);
         rvMovie.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        swiper.setRefreshing(true);
+        swipeRefreshLayout.setRefreshing(true);
 
-        swiper.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                getMovies();
-            }
-        });
+        swipeRefreshLayout.setOnRefreshListener(() -> getMovies());
 
         movieRepository = MovieRepository.getInstance();
         return view;
@@ -82,7 +77,7 @@ public class NowPlayingFragment extends Fragment {
             public void onSuccess(List<Movie> movies) {
                 movieAdapter = new MovieAdapter(movies, callback);
                 rvMovie.setAdapter(movieAdapter);
-                swiper.setRefreshing(false);
+                swipeRefreshLayout.setRefreshing(false);
             }
 
             @Override
@@ -96,12 +91,9 @@ public class NowPlayingFragment extends Fragment {
         Toast.makeText(getActivity(),R.string.no_internet_connection,Toast.LENGTH_SHORT).show();
     }
 
-    OnMovieClickCallback callback = new OnMovieClickCallback() {
-        @Override
-        public void onClick(Movie movie) {
-            Intent intent = new Intent(getActivity(), DetailActivity.class);
-            intent.putExtra("movie", movie);
-            startActivity(intent);
-        }
+    OnMovieClickCallback callback = movie -> {
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra("movie", movie);
+        startActivity(intent);
     };
 }

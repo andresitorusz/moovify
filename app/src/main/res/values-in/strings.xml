@@ -10,6 +10,19 @@
     <string name="movie_title">Judul Film</string>
     <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
     <string name="favorite">Favorit</string>
-    <string name="no_fav_found">No Favorite Movies Found</string>
+    <string name="no_fav_found">Tidak Ada Film Favorit</string>
+    <string name="appwidget_text">CONTOH</string>
+    <string name="add_widget">Tambahkan Widget</string>
+    <string name="no_data_available">Tidak Ada Data yang Tersedia</string>
+    <string name="favorite_movies">Film Favorit</string>
+    <string name="set_reminder">Atur Pengingat</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="app_will_remind_you_to_come_back_every_day">Aplikasi akan mengingatkan Anda untuk kembali setiap hari</string>
+    <string name="disable">Nonaktifkan</string>
+    <string name="enable">Aktifkan</string>
+    <string name="release_today_reminder">Pengingat Rilis Hari Ini</string>
+    <string name="daily_reminder_msg">Moovify merindukanmu!</string>
+    <string name="release_today_reminder_msg">telah dirilis hari ini!</string>
+
 
 </resources>

@@ -1,9 +1,9 @@
 package com.stilldre.moovify.activity;
 
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -52,13 +52,12 @@ public class DetailActivity extends AppCompatActivity {
     private MovieRepository movieRepository;
     private boolean isFavorite;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        movie = getIntent().getParcelableExtra("movie") ;
+        movie = getIntent().getParcelableExtra("movie");
 
         movieRepository = MovieRepository.getInstance();
 
@@ -87,7 +86,7 @@ public class DetailActivity extends AppCompatActivity {
         if (!favoriteHelper.getMovieById(movie.getId())) {
             isFavorite = false;
             menu.findItem(R.id.action_favorite).setIcon(R.drawable.ic_favorite);
-        } else if (favoriteHelper.getMovieById(movie.getId())){
+        } else if (favoriteHelper.getMovieById(movie.getId())) {
             isFavorite = true;
             menu.findItem(R.id.action_favorite).setIcon(R.drawable.ic_favorite_red);
         }
@@ -99,7 +98,7 @@ public class DetailActivity extends AppCompatActivity {
                 favoriteAdded();
                 menu.findItem(R.id.action_favorite).setIcon(R.drawable.ic_favorite_red);
                 isFavorite = true;
-            } else if (isFavorite){
+            } else if (isFavorite) {
                 removeFav(movie.getId());
                 isFavorite = false;
                 menu.findItem(R.id.action_favorite).setIcon(R.drawable.ic_favorite);
@@ -130,6 +129,7 @@ public class DetailActivity extends AppCompatActivity {
                             .into(ivBackdrop);
                 }
             }
+
             @Override
             public void onError() {
                 finish();
@@ -151,8 +151,8 @@ public class DetailActivity extends AppCompatActivity {
         return true;
     }
 
-    private void favoriteAdded(){
-        Toast.makeText(DetailActivity.this, "Favorite Added",Toast.LENGTH_SHORT).show();
+    private void favoriteAdded() {
+        Toast.makeText(DetailActivity.this, "Favorite Added", Toast.LENGTH_SHORT).show();
     }
 
     private void favoriteRemoved() {

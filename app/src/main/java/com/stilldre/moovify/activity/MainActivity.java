@@ -3,6 +3,7 @@ package com.stilldre.moovify.activity;
 import android.content.Intent;
 import android.provider.Settings;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         toolbar.setTitle(getResources().getString(R.string.app_name));
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white));
 
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
@@ -65,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_search:
                 Intent sIntent = new Intent(MainActivity.this, SearchActivity.class);
                 startActivity(sIntent);
+                break;
+            case R.id.action_reminder:
+                Intent rIntent = new Intent(MainActivity.this, ReminderActivity.class);
+                startActivity(rIntent);
                 break;
             default:
                 return false;
