@@ -16,7 +16,7 @@ import com.stilldre.moovify.repository.MovieRepository;
 import com.stilldre.moovify.service.click.OnMovieClickCallback;
 import com.stilldre.moovify.service.network.callback.OnGetMoviesCallback;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -63,7 +63,7 @@ public class SearchActivity extends AppCompatActivity {
     private void getMovies() {
         movieRepository.searchMovie(movieTitle, new OnGetMoviesCallback() {
             @Override
-            public void onSuccess(List<Movie> movies) {
+            public void onSuccess(ArrayList<Movie> movies) {
                 movieAdapter = new MovieAdapter(movies, callback);
                 rvMovie.setAdapter(movieAdapter);
             }
@@ -80,13 +80,10 @@ public class SearchActivity extends AppCompatActivity {
         return true;
     }
 
-    OnMovieClickCallback callback = new OnMovieClickCallback() {
-        @Override
-        public void onClick(Movie movie) {
-            Intent intent = new Intent(SearchActivity.this, DetailActivity.class);
-            intent.putExtra(DetailActivity.MOVIE_ID, movie.getId());
-            startActivity(intent);
-        }
+    OnMovieClickCallback callback = movie -> {
+        Intent intent = new Intent(SearchActivity.this, DetailActivity.class);
+        intent.putExtra("movie", movie);
+        startActivity(intent);
     };
 
     private void showError() {

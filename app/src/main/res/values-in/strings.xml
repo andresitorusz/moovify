@@ -28,5 +28,7 @@
     <string name="today">Hari ini</string>
     <string name="enabled">ENABLED</string>
     <string name="disabled">DISABLED</string>
+    <string name="released_today">Dirilis hari ini: </string>
+
 
 </resources>

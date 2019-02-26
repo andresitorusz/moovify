@@ -20,7 +20,7 @@ import com.stilldre.moovify.repository.MovieRepository;
 import com.stilldre.moovify.service.network.callback.OnGetMoviesCallback;
 import com.stilldre.moovify.service.click.OnMovieClickCallback;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -73,7 +73,7 @@ public class UpcomingFragment extends Fragment {
     private void getMovies() {
         movieRepository.getUpcomingMovie(new OnGetMoviesCallback() {
             @Override
-            public void onSuccess(List<Movie> movies) {
+            public void onSuccess(ArrayList<Movie> movies) {
                 movieAdapter = new MovieAdapter(movies, callback);
                 rvMovie.setAdapter(movieAdapter);
                 swipeRefreshLayout.setRefreshing(false);

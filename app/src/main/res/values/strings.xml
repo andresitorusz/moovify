@@ -31,5 +31,6 @@
     <string name="today">Today</string>
     <string name="enabled">ENABLED</string>
     <string name="disabled">DISABLED</string>
+    <string name="released_today">Released today: </string>
 
 </resources>
