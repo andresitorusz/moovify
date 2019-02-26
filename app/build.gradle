@@ -17,8 +17,8 @@ android {
         buildConfigField("String", "TMDB_MOVIE_TITLE", '"movie_title"')
         buildConfigField("String", "FAVORITE_TABLE_MOVIE", '"favorite"')
         buildConfigField("String", "FAVORITE_AUTHORITY", '"com.stilldre.moovify"')
-        buildConfigField("String", "TIME_DAILY", '"15:28"')
-        buildConfigField("String", "TIME_RELEASE_TODAY", '"15:28"')
+        buildConfigField("String", "TIME_DAILY", '"07:00"')
+        buildConfigField("String", "TIME_RELEASE_TODAY", '"08:00"')
     }
     buildTypes {
         release {
