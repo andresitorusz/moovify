@@ -18,14 +18,15 @@
     <string name="set_reminder">Atur Pengingat</string>
     <string name="daily_reminder">Pengingat Harian</string>
     <string name="app_will_remind_you_to_come_back_every_day">Aplikasi akan mengingatkan Anda untuk kembali setiap hari</string>
-    <string name="disable">Dinonaktifkan</string>
-    <string name="enable">Diaktifkan</string>
     <string name="release_today_reminder">Pengingat Rilis Hari Ini</string>
     <string name="daily_reminder_msg">Moovify merindukanmu!</string>
     <string name="release_today_reminder_msg">telah dirilis hari ini!</string>
     <string name="no_movie_released">Tidak ada film rilis hari ini</string>
     <string name="backdrop_path">Latar Belakang</string>
     <string name="you_will_get_notification_about_today_s_released_movie_s">Anda akan mendapat notifikasi tentang film yang rilis hari ini</string>
-
+    <string name="moovify_is_missing_you">Moovify merindukanmu!</string>
+    <string name="today">Hari ini</string>
+    <string name="enabled">ENABLED</string>
+    <string name="disabled">DISABLED</string>
 
 </resources>

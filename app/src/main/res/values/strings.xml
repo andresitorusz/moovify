@@ -21,13 +21,15 @@
     <string name="set_reminder">Set Reminder</string>
     <string name="daily_reminder">Daily Reminder</string>
     <string name="app_will_remind_you_to_come_back_every_day">App will remind you to come back every day</string>
-    <string name="disable">Disabled</string>
-    <string name="enable">Enabled</string>
     <string name="release_today_reminder">Release Today Reminder</string>
     <string name="daily_reminder_msg">Moovify is missing you!</string>
     <string name="release_today_reminder_msg">has been released today!</string>
     <string name="no_movie_released">No movie released today</string>
     <string name="backdrop_path">Backdrop Path</string>
     <string name="you_will_get_notification_about_today_s_released_movie_s">You will get notification about today\'s released movie(s)</string>
+    <string name="moovify_is_missing_you">Moovify is missing you!</string>
+    <string name="today">Today</string>
+    <string name="enabled">ENABLED</string>
+    <string name="disabled">DISABLED</string>
 
 </resources>
