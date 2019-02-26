@@ -1,4 +1,4 @@
-package com.stilldre.moovify.database;
+package com.stilldre.moovify.helper;
 
 import android.content.ContentValues;
 import android.content.Context;

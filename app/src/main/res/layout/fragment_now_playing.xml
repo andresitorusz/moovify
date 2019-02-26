@@ -13,7 +13,6 @@
         android:background="@android:color/white"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView_now_playing"
         android:layout_width="match_parent"

@@ -1,8 +1,10 @@
-package com.stilldre.moovify.database;
+package com.stilldre.moovify.helper;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.stilldre.moovify.database.DatabaseContract;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
 

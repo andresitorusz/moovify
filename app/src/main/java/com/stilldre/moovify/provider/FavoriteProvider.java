@@ -8,15 +8,12 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.stilldre.moovify.database.FavoriteHelper;
+import com.stilldre.moovify.helper.FavoriteHelper;
 
 import static com.stilldre.moovify.database.DatabaseContract.AUTHORITY;
 import static com.stilldre.moovify.database.DatabaseContract.CONTENT_URI;
 import static com.stilldre.moovify.database.DatabaseContract.TABLE_NAME;
 
-/**
- * Created by Ivana Situmorang on 1/29/2019.
- */
 public class FavoriteProvider extends ContentProvider {
 
     private static final int MOVIE = 1;

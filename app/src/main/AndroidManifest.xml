@@ -59,6 +59,17 @@
         <service
             android:name=".widget.MoovifyWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:name=".reminder.DailyReminder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".reminder.ReleaseTodayReminder"
+            android:enabled="true"
+            android:exported="true" />
+
     </application>
 
 </manifest>

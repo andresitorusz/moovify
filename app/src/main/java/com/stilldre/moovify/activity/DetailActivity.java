@@ -1,6 +1,5 @@
 package com.stilldre.moovify.activity;
 
-import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -19,7 +18,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.stilldre.moovify.BuildConfig;
 import com.stilldre.moovify.R;
-import com.stilldre.moovify.database.FavoriteHelper;
+import com.stilldre.moovify.helper.FavoriteHelper;
 import com.stilldre.moovify.model.Movie;
 import com.stilldre.moovify.repository.MovieRepository;
 import com.stilldre.moovify.service.network.callback.OnGetDetailCallback;

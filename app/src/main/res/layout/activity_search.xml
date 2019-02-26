@@ -40,7 +40,6 @@
         android:background="@android:color/white"
         android:orientation="vertical">
 
-        <!-- TODO: Update blank fragment layout -->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView_movie_list"
             android:layout_width="match_parent"

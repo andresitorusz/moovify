@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import com.stilldre.moovify.R;
 import com.stilldre.moovify.adapter.FavoriteAdapter;
-import com.stilldre.moovify.database.FavoriteHelper;
+import com.stilldre.moovify.helper.FavoriteHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

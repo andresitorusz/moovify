@@ -24,6 +24,7 @@
 
             <ImageView
                 android:id="@+id/movieDetailsBackdrop"
+                android:contentDescription="@string/backdrop_path"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"

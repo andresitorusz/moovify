@@ -5,19 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.os.Binder;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.SimpleTarget;
-import com.bumptech.glide.request.transition.Transition;
 import com.stilldre.moovify.BuildConfig;
 import com.stilldre.moovify.R;
 import com.stilldre.moovify.model.Movie;
@@ -27,8 +21,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
-import butterknife.BindView;
-
 import static com.stilldre.moovify.database.DatabaseContract.CONTENT_URI;
 
 public class MoovifyRemoteViewsFactory implements RemoteViewsService.RemoteViewsFactory {
@@ -37,8 +29,6 @@ public class MoovifyRemoteViewsFactory implements RemoteViewsService.RemoteViews
     private final Context context;
     private int appWidgetId;
     private Cursor cursor;
-
-    ImageView imageView;
 
     public MoovifyRemoteViewsFactory(Context context, Intent intent) {
         this.context = context;
