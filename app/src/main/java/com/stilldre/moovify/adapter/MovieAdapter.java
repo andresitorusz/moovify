@@ -17,6 +17,9 @@ import com.stilldre.moovify.service.click.OnMovieClickCallback;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
     private String IMAGE_BASE_URL = BuildConfig.TMDB_IMAGE_BASE_URL_500;
@@ -46,21 +49,21 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     }
 
     public class MovieViewHolder extends RecyclerView.ViewHolder {
-        TextView tvReleaseDate;
-        TextView tvTitle;
-        TextView tvRating;
+
+        @BindView(R.id.item_movie_poster)
         ImageView ivPoster;
+        @BindView(R.id.item_movie_rating)
+        TextView tvRating;
+        @BindView(R.id.item_movie_release_date)
+        TextView tvReleaseDate;
+        @BindView(R.id.item_movie_title)
+        TextView tvTitle;
 
         Movie movie;
 
-
         public MovieViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvReleaseDate = itemView.findViewById(R.id.item_movie_release_date);
-            tvTitle = itemView.findViewById(R.id.item_movie_title);
-            tvRating = itemView.findViewById(R.id.item_movie_rating);
-            ivPoster = itemView.findViewById(R.id.item_movie_poster);
-
+            ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(v -> callback.onClick(movie));
         }
 
